@@ -81,6 +81,10 @@ I saw that a healthy API does not guarantee a working proxy path.
 I practised checking container status, reading logs and testing
 connectivity before changing the configuration.
 
-## Next step
+## GitHub Actions
 
-I plan to add GitHub Actions to build and test the project automatically.
+I added a CI workflow that runs on pushes to main and pull requests.
+It builds and starts the containers.
+It checks the Nginx configuration and runs my smoke test.
+If a check fails, it prints container status and logs.
+The first run passed on a GitHub-hosted Ubuntu runner.
