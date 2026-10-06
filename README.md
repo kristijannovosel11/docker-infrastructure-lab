@@ -88,3 +88,11 @@ It builds and starts the containers.
 It checks the Nginx configuration and runs my smoke test.
 If a check fails, it prints container status and logs.
 The first run passed on a GitHub-hosted Ubuntu runner.
+
+## CI failure exercise
+
+I deliberately changed the application version in a draft pull request.
+The smoke test detected the mismatch.
+I restored the version and confirmed that the next check passed.
+
+[Scenario notes](docs/03-ci-version-mismatch.md)
